@@ -25,4 +25,3 @@ navigation:ff
 piping_description：solidworks生成的urdf
 
 reference:  https://github.com/kinglintianxia/autolabor_pro1
-11
