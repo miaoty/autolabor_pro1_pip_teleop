@@ -1,0 +1,3 @@
+<launch>
+  <node name="autolabor_pro1_teleop" pkg="autolabor_pro1_teleop" type="autolabor_pro1_teleop.py" output="screen" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/tymiao/mty/autolabor_pro1_pip_teleop/install
+
+Name: piping_160_urdf
+Description: Description of piping_160_urdf
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

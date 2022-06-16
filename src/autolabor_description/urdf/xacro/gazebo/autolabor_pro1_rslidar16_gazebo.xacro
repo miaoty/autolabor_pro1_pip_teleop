@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="autolabor_rslidar16" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:arg name="gpu" default="false"/>
+    <xacro:property name="gpu" value="$(arg gpu)" />
+    <xacro:include filename="$(find autolabor_description)/urdf/autolabor_pro1.xacro" />
+
+    <xacro:include filename="$(find autolabor_description)/urdf/sensors/RS-16.urdf.xacro" />
+    <RS-16 parent="base_link" name="robosense" topic="/rs_points" hz="20" samples="900" gpu="${gpu}">
+        <origin xyz="0 0 0.33" rpy="0 0 0" />
+    </RS-16>
+
+    <autolabor_pro1/>
+  
+</robot>

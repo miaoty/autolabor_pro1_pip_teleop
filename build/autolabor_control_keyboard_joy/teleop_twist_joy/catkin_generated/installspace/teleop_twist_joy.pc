@@ -1,0 +1,8 @@
+prefix=/home/tymiao/mty/autolabor_pro1_pip_teleop/install
+
+Name: teleop_twist_joy
+Description: Description of teleop_twist_joy
+Version: 0.1.2
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lteleop_twist_joy
+Requires: geometry_msgs roscpp sensor_msgs

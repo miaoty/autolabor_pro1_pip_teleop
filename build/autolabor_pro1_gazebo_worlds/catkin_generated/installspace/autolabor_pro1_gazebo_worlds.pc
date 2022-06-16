@@ -1,0 +1,8 @@
+prefix=/home/tymiao/mty/autolabor_pro1_pip_teleop/install
+
+Name: autolabor_pro1_gazebo_worlds
+Description: Description of autolabor_pro1_gazebo_worlds
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

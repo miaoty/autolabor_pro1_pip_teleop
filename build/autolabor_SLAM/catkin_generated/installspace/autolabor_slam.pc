@@ -1,0 +1,8 @@
+prefix=/home/tymiao/mty/autolabor_pro1_pip_teleop/install
+
+Name: autolabor_slam
+Description: Description of autolabor_slam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

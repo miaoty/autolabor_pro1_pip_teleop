@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find autolabor_slam)/launch/gmapping.launch"/>
+
+    <!-- 启动rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find autolabor_slam)/rviz/gmapping.rviz"/>
+
+</launch>

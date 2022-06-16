@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="piping_160_urdf">
+<gazebo reference="base_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/Turquoise</material>
+  </gazebo> 
+    <gazebo reference="piping_link">
+    <mu1>0.6</mu1>
+    <mu2>0.6</mu2>
+    <material>Gazebo/GreyTransparent</material>
+  </gazebo> 
+    <gazebo reference="holder_Link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/CoM</material>
+  </gazebo> 
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="5.2996 -1.5925 1.9158"
+        rpy="0 0 0" />
+      <mass
+        value="13206" />
+      <inertia
+        ixx="2010500"
+        ixy="8.4278E-15"
+        ixz="6.0129E-10"
+        iyy="3061000"
+        iyz="2.6991E-14"
+        izz="1050500" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="piping_link">
+    <inertial>
+      <origin
+        xyz="13.2 1.2564 5.7713"
+        rpy="0 0 0" />
+      <mass
+        value="11155" />
+      <inertia
+        ixx="569180"
+        ixy="-1.4188E-10"
+        ixz="-27669"
+        iyy="981010"
+        iyz="4.0745E-10"
+        izz="432360" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/piping_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.80784 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/piping_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="piping"
+    type="fixed">
+    <origin
+      xyz="16.252 -7.687 -1.5875"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="piping_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="holder_Link">
+    <inertial>
+      <origin
+        xyz="6.9667 0.8 -5.4667"
+        rpy="0 0 0" />
+      <mass
+        value="15360" />
+      <inertia
+        ixx="5222.4"
+        ixy="6.5725E-14"
+        ixz="5.0567E-14"
+        iyy="4556.8"
+        iyz="1.0814E-13"
+        izz="5888" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/holder_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_160_urdf/meshes/holder_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="holder"
+    type="fixed">
+    <origin
+      xyz="-3.7484 -7.2158 -1.5875"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="holder_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/tymiao/mty/autolabor_pro1_pip_teleop/devel
+
+Name: autolabor_gazebo_plugins
+Description: Description of autolabor_gazebo_plugins
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

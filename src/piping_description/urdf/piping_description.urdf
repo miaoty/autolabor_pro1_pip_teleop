@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="piping_description">
+  <gazebo reference="base_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/Turquoise</material>
+  </gazebo> 
+    <gazebo reference="pip">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/GreyTransparent</material>
+  </gazebo> 
+    <gazebo reference="hold1">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/CoM</material>
+  </gazebo> 
+    <gazebo reference="hold2">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/CoM</material>
+  </gazebo> 
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.0696 2.05 0.0005"
+        rpy="0 0 0" />
+      <mass
+        value="33.371" />
+      <inertia
+        ixx="46.747"
+        ixy="6.8556E-15"
+        ixz="9.1923E-19"
+        iyy="184.23"
+        iyz="0"
+        izz="230.97" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="pip">
+    <inertial>
+      <origin
+        xyz="3.9943 2.1332 0.1841"
+        rpy="0 0 0" />
+      <mass
+        value="23.115" />
+      <inertia
+        ixx="4.0165"
+        ixy="-4.8305"
+        ixz="-0.53969"
+        iyy="18.751"
+        iyz="-0.10608"
+        izz="21.929" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/pip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/pip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pip_joint"
+    type="fixed">
+    <origin
+      xyz="0.0019995 0 0.003"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pip" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hold2">
+    <inertial>
+      <origin
+        xyz="1 0.125 0.1"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="0.85417"
+        ixy="0"
+        ixz="0"
+        iyy="33.667"
+        iyz="0"
+        izz="33.854" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/hold2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/hold2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hold2_joint"
+    type="fixed">
+    <origin
+      xyz="1.7964 1.2 0.001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hold2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hold1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/hold1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piping_description/meshes/hold1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hold1_joint"
+    type="fixed">
+    <origin
+      xyz="7.5042 3.85 0.001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hold1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
