@@ -2,7 +2,7 @@
 
 车体gazebo开启：
 ```shell
-roslaunch autolabor_gazebo_worlds autolabor_pro1_gazebo.launch    #车体
+roslaunch autolabor_pro1_gazebo_worlds autolabor_pro1_gazebo.launch    #车体
 roslaunch autolabor_gazebo_worlds autolabor_pro1_rplidar_gazebo.launch     #车体+rplidarA1
 roslaunch autolabor_gazebo_worlds autolabor_pro1_rslidar16_gazebo.launch     #车体+rslidar16
 ```
