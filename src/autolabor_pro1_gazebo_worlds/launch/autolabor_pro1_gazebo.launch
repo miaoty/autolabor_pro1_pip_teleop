@@ -1,7 +1,7 @@
 <launch>
 
     <!-- 设置launch文件的参数 -->
-    <arg name="world_name" value="$(find autolabor_pro1_gazebo_worlds)/worlds/piping_160.world"/>
+    <arg name="world_name" value="$(find autolabor_pro1_gazebo_worlds)/worlds/varPipe.world"/>
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
     <arg name="gui" default="true"/>

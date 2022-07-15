@@ -131,15 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/gtest/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_description/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_control_keyboard_joy/autolabor_pro1_teleop/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_control_keyboard_joy/teleop_twist_joy/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_gazebo_plugins/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_pro1_driver/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_SLAM/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/piping_160_urdf/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/piping_description/cmake_install.cmake")
-  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/autolabor_pro1_gazebo_worlds/cmake_install.cmake")
+  include("/home/tymiao/mty/autolabor_pro1_pip_teleop/build/varPipe/cmake_install.cmake")
 
 endif()
 

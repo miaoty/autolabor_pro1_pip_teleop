@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="varPipe">
+  <gazebo reference="base_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <material>Gazebo/Turquoise</material>
+  </gazebo> 
+    <gazebo reference="pipe_Link">
+    <mu1>0.6</mu1>
+    <mu2>0.6</mu2>
+    <material>Gazebo/GreyTransparent</material>
+  </gazebo> 
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="16.343 9.2378 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="6039" />
+      <inertia
+        ixx="171780"
+        ixy="-1.7475E-11"
+        ixz="2.5787E-31"
+        iyy="537670"
+        iyz="-7.5602E-15"
+        izz="709450" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://varPipe/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://varPipe/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="pipe_Link">
+    <inertial>
+      <origin
+        xyz="16.354 6.0884 0.46491"
+        rpy="0 0 0" />
+      <mass
+        value="3952.9" />
+      <inertia
+        ixx="10647"
+        ixy="-4677.5"
+        ixz="-2.6807E-12"
+        iyy="45036"
+        iyz="-4.708E-12"
+        izz="54498" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://varPipe/meshes/pipe_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://varPipe/meshes/pipe_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pipe_joint"
+    type="fixed">
+    <origin
+      xyz="0 1.8574 0.01"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pipe_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

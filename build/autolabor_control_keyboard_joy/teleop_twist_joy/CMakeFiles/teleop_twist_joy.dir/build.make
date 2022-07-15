@@ -90,14 +90,24 @@ teleop_twist_joy_EXTERNAL_OBJECTS =
 
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: autolabor_control_keyboard_joy/teleop_twist_joy/CMakeFiles/teleop_twist_joy.dir/src/teleop_twist_joy.cpp.o
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: autolabor_control_keyboard_joy/teleop_twist_joy/CMakeFiles/teleop_twist_joy.dir/build.make
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/libPocoFoundation.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libdl.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libroscpp.so
-/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/librosconsole.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libroslib.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/librospack.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libroscpp_serialization.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/librostime.so
 /home/tymiao/mty/autolabor_pro1_pip_teleop/devel/lib/libteleop_twist_joy.so: /opt/ros/melodic/lib/libcpp_common.so
